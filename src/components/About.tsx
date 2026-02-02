@@ -32,7 +32,7 @@ const About = () => {
                             Disfruto trabajando en equipo en entornos dinámicos y siempre busco mejorar la calidad del código mediante buenas prácticas y testing.
                         </p>
 
-                        <div className="pt-6">
+                        <div className="pt-6 flex flex-col items-center sm:items-start text-center sm:text-left">
                             <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
                                 <CheckCircle2 size={18} className="text-indigo-400" /> Idiomas
                             </h3>
