@@ -31,7 +31,7 @@ const Experience = () => {
             degree: "CFGS Desarrollo de Aplicaciones Web",
             school: "FP LLefià",
             period: "2022 - 2024",
-            description: "Enfoque profundo en arquitectura fullstack moderna. Stack: JS, React, Node.js, Vite, SQL, MongoDB. Gestión ágil con Jira y procesos de QA.",
+            description: "Enfoque profundo en arquitectura fullstack moderna. Stack: JS, React, Node.js, Vite, SQL, MongoDB. Gestión ágil con Jira, Confluence y Trello, y procesos de QA Testing.",
             type: "edu"
         },
         {
