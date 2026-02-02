@@ -11,10 +11,12 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', system-ui, sans-serif;
+    background-color: #020617;
   }
 
   body {
-    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    @apply text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    background-color: transparent;
   }
 
   /* Custom Scrollbar */

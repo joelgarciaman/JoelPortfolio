@@ -6,7 +6,7 @@ const AdditionalInfo = () => {
         <section id="otros-datos" className="py-32 relative overflow-hidden">
             <div className="container mx-auto px-6">
 
-                <h2 className="text-4xl md:text-5xl font-black text-white mb-20 text-center">Más sobre <span className="gradient-text">Joel</span></h2>
+                <h2 className="text-4xl md:text-5xl font-black text-white mb-20 text-center">Más sobre <span className="gradient-text">mí</span></h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
 
@@ -43,7 +43,7 @@ const AdditionalInfo = () => {
                                 <div className="space-y-4">
                                     <h4 className="text-sm font-bold uppercase tracking-widest text-slate-500">Movilidad & Ubicación</h4>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <div className="p-6 rounded-3xl bg-white/5 border border-white/5 flex items-center gap-4 h-full">
+                                        <div className="p-6 rounded-3xl bg-white/5 border border-white/5 flex items-center gap-4 h-full ">
                                             <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 shrink-0">
                                                 <Car size={24} />
                                             </div>
