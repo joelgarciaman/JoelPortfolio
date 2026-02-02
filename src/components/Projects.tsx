@@ -12,7 +12,7 @@ const Projects = () => {
             color: "cyan"
         },
         {
-            title: "Tetris Core Engine",
+            title: "Tetris en JavaScript",
             description: "Recreación técnica del motor de Tetris en JavaScript puro. Enfoque en algoritmos de colisión, gestión de ciclos y persistencia de datos local.",
             tags: ["JavaScript", "HTML5", "Game Engine", "CSS Animations"],
             link: "https://tetris-theta-ten.vercel.app/",
