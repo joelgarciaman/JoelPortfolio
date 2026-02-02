@@ -43,8 +43,8 @@ const AdditionalInfo = () => {
                                 <div className="space-y-4">
                                     <h4 className="text-sm font-bold uppercase tracking-widest text-slate-500">Movilidad & Ubicación</h4>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <div className="p-6 rounded-3xl bg-white/5 border border-white/5 flex items-center gap-4 h-full hover:bg-white/10 ">
-                                            <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 shrink-0">
+                                        <div className="p-6 rounded-3xl bg-white/5 border border-white/5 flex items-center gap-4 h-full hover:bg-white/10 group/loc transition-all">
+                                            <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 shrink-0 group-hover/loc:scale-110 transition-transform">
                                                 <Car size={24} />
                                             </div>
                                             <div>
