@@ -16,7 +16,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             {/* Main content area */}
             <main className="flex-grow flex flex-col pt-16 relative z-10">
                 {/* Noise texture overlay for a premium look */}
-                <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-[9999] bg-[url('/noise.png')]"></div>
+                <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-[9999] noise-overlay"></div>
 
                 {children}
             </main>
