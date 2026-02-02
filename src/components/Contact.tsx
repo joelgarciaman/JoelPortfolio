@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
     return (
@@ -29,17 +29,26 @@ const Contact = () => {
                         <p className="text-slate-400 text-sm">+34 611 247 390</p>
                     </a>
 
+                    <a href="https://www.linkedin.com/in/joel-garcía-manjón-1aa370181" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800 transition-colors group">
+                        <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                            <Linkedin size={24} />
+                        </div>
+                        <h3 className="text-white font-semibold mb-1">LinkedIn</h3>
+                        <p className="text-slate-400 text-sm">Conectar</p>
+                    </a>
+
+                    <a href="https://github.com/joelgarciaman" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800 transition-colors group">
+                        <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition-transform">
+                            <Github size={24} />
+                        </div>
+                        <h3 className="text-white font-semibold mb-1">Github</h3>
+                        <p className="text-slate-400 text-sm">Explorar código</p>
+                    </a>
+
                     <div className="flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-2xl md:col-span-2">
-                        <div className="flex gap-8">
-                            <div className="flex items-center gap-2 text-slate-300">
-                                <MapPin size={18} className="text-emerald-400" />
-                                <span>Badalona, Barcelona</span>
-                            </div>
-                            <a href="https://github.com/joelgarciaman" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
-                                <Github size={18} />
-                                <span>Github</span>
-                                <ExternalLink size={14} className="opacity-50" />
-                            </a>
+                        <div className="flex items-center gap-2 text-slate-300">
+                            <MapPin size={18} className="text-emerald-400" />
+                            <span>Badalona, Barcelona</span>
                         </div>
                     </div>
 
