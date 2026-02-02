@@ -33,7 +33,7 @@ const Projects = () => {
                     >
                         <h2 className="text-4xl md:text-5xl font-black text-white mb-6 text-center">Proyectos <span className="gradient-text">Destacados</span></h2>
                         <p className="text-slate-400 max-w-xl text-lg mx-auto">
-                            Explora una selección selecta de mis trabajos más representativos donde la técnica y el diseño convergen.
+                            Explora una selección de mis trabajos más representativos donde la técnica y el diseño convergen.
                         </p>
                     </motion.div>
                 </div>
