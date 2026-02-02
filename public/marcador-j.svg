@@ -1,0 +1,21 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Glow Circle -->
+  <circle cx="50" cy="50" r="45" fill="black" fill-opacity="0.8" stroke="url(#paint0_linear)" stroke-width="2" filter="url(#glow)" />
+  
+  <!-- The 'J' Character -->
+  <path d="M60 30V65C60 73.2843 53.2843 80 45 80C36.7157 80 30 73.2843 30 65H38C38 68.866 41.134 72 45 72C48.866 72 52 68.866 52 65V30H60Z" fill="url(#paint0_linear)" filter="url(#glow)" />
+  
+  <!-- Small detail dot -->
+  <circle cx="70" cy="75" r="3" fill="#10b981" />
+</svg>

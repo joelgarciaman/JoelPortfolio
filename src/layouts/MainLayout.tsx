@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import NeuronBackground from '../components/NeuronBackground';
 
 interface MainLayoutProps {
     children: ReactNode;
@@ -8,11 +9,15 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
     return (
-        <div className="flex flex-col min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 selection:text-indigo-200">
+        <div className="flex flex-col min-h-screen selection:bg-indigo-500/30 selection:text-white">
+            <NeuronBackground />
             <Header />
 
-            {/* Main content area - pt-16 accounts for fixed header height */}
+            {/* Main content area */}
             <main className="flex-grow flex flex-col pt-16 relative z-0">
+                {/* Noise texture overlay for a premium look */}
+                <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-[9999] bg-[url('/noise.png')]"></div>
+
                 {children}
             </main>
 
@@ -22,3 +27,5 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 };
 
 export default MainLayout;
+
+

@@ -1,16 +1,36 @@
+import { motion } from 'framer-motion';
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="w-full bg-slate-900 border-t border-slate-800 py-8 mt-auto">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col items-center justify-center space-y-4">
-                    <p className="text-slate-400 text-sm text-center">
-                        &copy; {currentYear} Joel García Manjón - Portfolio. Todos los derechos reservados.
-                    </p>
-                    <div className="flex space-x-6">
-                        <a href="https://github.com/joelgarciaman" className="text-slate-500 hover:text-indigo-400 transition-colors" target="_blank">GitHub</a>
-                        <a href="https://www.linkedin.com/in/joel-garcía-manjón-1aa370181" className="text-slate-500 hover:text-indigo-400 transition-colors" target="_blank">LinkedIn</a>
+        <footer className="w-full py-12 relative overflow-hidden border-t border-white/5">
+            <div className="container mx-auto px-6 relative z-10">
+                <div className="flex flex-col items-center justify-center gap-8 text-center">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        className="text-slate-500 text-sm font-medium order-2 md:order-1"
+                    >
+                        &copy; {currentYear} <span className="text-white">Joel García Manjón</span>. Todos los derechos reservados.
+                    </motion.div>
+
+                    <div className="flex items-center gap-8 order-1 md:order-2">
+                        {[
+                            { name: 'GitHub', href: 'https://github.com/joelgarciaman' },
+                            { name: 'LinkedIn', href: 'https://www.linkedin.com/in/joel-garc%C3%ADa-manj%C3%B3n-1aa370181/' }
+                        ].map((link) => (
+                            <motion.a
+                                key={link.name}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                whileHover={{ y: -2, color: '#fff' }}
+                                className="text-slate-500 text-xs font-bold tracking-widest uppercase transition-colors"
+                            >
+                                {link.name}
+                            </motion.a>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -19,3 +39,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
