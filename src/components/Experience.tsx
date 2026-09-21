@@ -6,7 +6,7 @@ const Experience = () => {
         {
             role: "JD Sales Assistant",
             company: "JD Sports",
-            period: "2023 - Actualidad",
+            period: "2023 - Sept.2026",
             description: "Gestión de almacén integral (Booking, Checks, Track, IBT, Picking), atención al cliente especializada y optimización de KPIs de ventas.",
             type: "work"
         },
